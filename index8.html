@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Посилання та кнопки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Демонстрація посилань і кнопок</h1>
+    <nav>
+      <a href="#section1">Перейти до розділу 1</a> |
+      <a href="#section2">Перейти до розділу 2</a> |
+      <a href="previous_work.html" target="_blank">Моя попередня робота</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section1">
+      <h2>Розділ 1: Посилання</h2>
+      <p>
+        Це приклад великого тексту для перевірки переходів між частинами документа.
+        Використовуйте навігаційні посилання, щоб швидко перейти до потрібної секції.
+      </p>
+      <p>
+        <a href="#top" class="back-to-top">Повернутись нагору</a>
+      </p>
+    </section>
+
+    <section id="section2">
+      <h2>Розділ 2: Кнопки</h2>
+
+      <h3>1. Кнопка, створена вручну (CSS)</h3>
+      <button class="manual-btn" onclick="alert('Привіт! Це моя перша кнопка на JavaScript')">
+        Натисни мене
+      </button>
+
+      <h3>2. Кнопка з генератора стилів</h3>
+      <a href="https://github.com/" class="gen-btn" target="_blank">Мій GitHub</a>
+
+      <h3>3. Готова кнопка Bootstrap-стилю</h3>
+      <button class="ready-btn">Готова кнопка</button>
+
+      <h3>4. Кнопка для запуску JavaScript функції</h3>
+      <button class="js-btn" onclick="changeColor()">Змінити колір фону</button>
+
+      <p><a href="#section1" class="back-to-top">Повернутись до розділу 1</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Мій навчальний проєкт</p>
+  </footer>
+
+  <script>
+    function changeColor() {
+      document.body.style.backgroundColor = 
+        document.body.style.backgroundColor === 'lightyellow' ? 'white' : 'lightyellow';
+    }
+  </script>
+
+</body>
+</html>
